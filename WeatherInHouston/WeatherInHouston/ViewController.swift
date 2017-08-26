@@ -10,11 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var initialButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initialButton.titleLabel?.textAlignment = .center
         }
-
-
 
 }
 

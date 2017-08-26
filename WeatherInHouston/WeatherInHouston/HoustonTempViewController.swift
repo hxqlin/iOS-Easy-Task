@@ -13,6 +13,7 @@ import SwiftyJSON
 class HoustonTempViewController: UIViewController {
     
     @IBOutlet weak var temperatureDisplayField: UITextField!
+    @IBOutlet weak var refreshButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,7 +40,9 @@ class HoustonTempViewController: UIViewController {
         }
     }
 
-
+    @IBAction func refreshTemperatureDisplay(_ sender: UIButton) {
+        self.viewDidLoad()
+    }
 
 
 }
